@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTf-8">
+        <title>Fale Conosco</title>
+		<link rel="icon" href="imagens/icon.jpg" type="image/jpg">
+        <link rel="stylesheet" href="estilo.css">
+        <header>
+            <img src="imagens/fieb.png" height="65px" alt="LogoFieb">
+        </header>
+    </head>
+    <body>
+        <input type="checkbox" id="chec">
+        <label for="chec">
+            <img src="imagens/risco-menu.jpg" id="risco">
+        </label>
+        <nav>
+            <ul id="ul1">
+                <hr>
+                <li><a href="index.html" id="aba">Home</a></li>
+                <hr>
+                <li><a href="Soft Skills.html" id="aba">Soft Skills</a></li>
+                <hr>
+                <li><a href="Inteligência Emocional.html" id="aba">Inteligência Emocional</a></li>
+                <hr>
+            </ul>
+        </nav>
+        <br />
+        <div class="center">
+        </head>
+        <body>
+          
+          <div class="container1">
+            <div class="imagem1" onclick="mostrarTexto(1)">
+              <img src="imagens/dtt.jpg" id="ft1">
+              <div class="texto1" id="texto">Daniel Duarte, RM:86136 <br /> Nº03 - INF2BM</div>
+            </div>
+            <div class="imagem1" onclick="mostrarTexto(2)">
+              <img src="imagens/eloah.jpg" id="ft2">
+              <div class="texto1" id="texto">Eloah Gomes, RM:86136 <br /> Nº07 - INF2BM</div>
+            </div>
+            <div class="imagem1" onclick="mostrarTexto(3)">
+              <img src="imagens/well2.jpg" id="ft3">
+              <div class="texto1" id="texto">Wellington José de Paula, RM:86136 <br />Nº35 - INF2BM</div>
+            </div>
+          </div>
+        
+          <script>
+            function mostrarTexto(imagemId) {
+              var texto = document.getElementById("texto" + imagemId);
+              texto.style.opacity = 1;
+            }
+          </script>
+
+         <br />
+         <hr>
+        <div class="center">
+        <br />
+        <h1 id="fonte">Fale Conosco</h1>
+        <br />
+        <form action="faleconosco.html" method="post">
+            <input type="text" placeholder="Nome" id="nome" required>
+            
+            <input type="email" placeholder="Email" id="email" required>
+            
+            <textarea id="mensagem" placeholder="Digite uma Mensagem" required></textarea>
+            
+            <input type="submit" id="botao" value="Enviar" onclick="exibirMensagem()">
+          </form>
+        </div>
+        <br />
+    </body>
+</html>
